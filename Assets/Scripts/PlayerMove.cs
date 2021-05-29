@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.velocity = rb.transform.forward * speed;
+        // rb.velocity = rb.transform.forward * speed;
     }
     public void OnMove(Vector2 direction)
     {
