@@ -2979,6 +2979,7 @@ GameObject:
   - component: {fileID: 919132149569485890}
   - component: {fileID: 919132149569485891}
   - component: {fileID: 919132149569485892}
+  - component: {fileID: 919132149569485893}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3011,12 +3012,12 @@ Rigidbody:
   m_GameObject: {fileID: 7033919751507311933}
   serializedVersion: 2
   m_Mass: 100
-  m_Drag: 0
+  m_Drag: 0.1
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &7880430109677724960
 BoxCollider:
@@ -3072,7 +3073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  smooth: 0.3
+  smooth: 0.5
 --- !u!114 &919132149569485892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3101,6 +3102,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &919132149569485893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7033919751507311933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e400027a13769a44bb3ec6e054c1b172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollect:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7086952716304621158
 GameObject:
   m_ObjectHideFlags: 0
